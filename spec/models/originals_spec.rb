@@ -6,4 +6,5 @@ describe Original do
   it { is_expected.to have_db_column :release_year }
   it { is_expected.to have_db_column :maturity }
   it { is_expected.to have_db_column :is_streaming }
+  it { is_expected.to have_db_index :title }
 end

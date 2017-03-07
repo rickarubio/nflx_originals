@@ -10,18 +10,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170307225728) do
+ActiveRecord::Schema.define(version: 20170307233045) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
-
-  create_table "contents", force: :cascade do |t|
-    t.string  "title"
-    t.string  "box_art_url"
-    t.integer "release_year"
-    t.string  "maturity"
-    t.boolean "is_streaming"
-  end
 
   create_table "originals", force: :cascade do |t|
     t.string  "title"

@@ -1,6 +1,6 @@
-class CreateContent < ActiveRecord::Migration[5.0]
+class CreateOriginals < ActiveRecord::Migration[5.0]
   def change
-    create_table :contents do |t|
+    create_table :originals do |t|
       t.string :title
       t.string :box_art_url
       t.integer :release_year
