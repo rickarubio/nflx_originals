@@ -1,1 +1,1 @@
-App = angular.module('originals', []);
+App = angular.module('originals', ['templates']);

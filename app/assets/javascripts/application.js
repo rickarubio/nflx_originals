@@ -16,6 +16,11 @@
 
 // Rails-Assets.org
 //= require angular
+//= require foundation
+//= require angular-rails-templates
+
+// Templates for angular rails templates
+//= require_tree ./app/templates
 
 //= require_tree .
 

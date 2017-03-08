@@ -1,0 +1,26 @@
+$nflx-red: #a03c3c;
+
+.nav-bar {
+  background-color: $nflx-red;
+  color: white;
+  ul {
+    list-style-type: none;
+
+    li {
+      display: inline-block;
+      border-left: 2px solid white;
+      border-right: 2px solid white;
+      padding-left: 0.25rem;
+      padding-right: 0.5rem;
+
+      a:visited {
+        color: white;
+      }
+
+      a:hover {
+        color: #e6e6e6;
+      }
+    }
+  }
+
+}
