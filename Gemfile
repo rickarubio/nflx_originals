@@ -41,6 +41,7 @@ gem 'high_voltage', '~> 3.0.0'
 
 source 'https://rails-assets.org' do
   gem 'rails-assets-angular'
+  gem 'rails-assets-marx'
 end
 
 group :development, :test do
