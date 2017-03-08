@@ -39,6 +39,10 @@ gem 'jbuilder', '~> 2.5'
 
 gem 'high_voltage', '~> 3.0.0'
 
+source 'https://rails-assets.org' do
+  gem 'rails-assets-angular'
+end
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri

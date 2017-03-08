@@ -13,4 +13,10 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+
+// Rails-Assets.org
+//= require angular
+
 //= require_tree .
+
+
