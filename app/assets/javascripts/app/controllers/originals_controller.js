@@ -1,7 +1,9 @@
 (function() {
   'use strict';
 
-  App.controller('originalsCtrl', function($scope) {
-    console.log('controller was loaded');
+  App.controller('originalsCtrl', function(originals) {
+    this.originals = originals.data;
+    this.orderByField = 'title';
+    this.reverseSort = false;
   });
 })();

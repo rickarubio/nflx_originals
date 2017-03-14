@@ -18,6 +18,7 @@
 //= require angular
 //= require foundation
 //= require angular-rails-templates
+//= require angular-route
 
 // Templates for angular rails templates
 //= require_tree ./app/templates

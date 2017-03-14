@@ -1,0 +1,17 @@
+<table class="hover originals-table">
+  <thead>
+  <tr>
+    <th>box_art</th>
+    <th><a href="" ng-click="vm.orderByField='title'; vm.reverseSort = !vm.reverseSort">
+        <span ng-show="vm.orderByField == 'title' && !vm.reverseSort" class="fa fa-caret-up"></span>
+        <span ng-show="vm.orderByField == 'title' && vm.reverseSort" class="fa fa-caret-down"></span>
+        title</a></th>
+    <th><a href="" ng-click="orderByField='release_year'; reverseSort=!reverseSort"><i ng-show="orderByField == 'release_year'" class="fa fa-caret-down"></i> release_year</a></th>
+    <th>maturity</th>
+    <th><a href="" ng-click="orderByField='is_streaming'; reverseSort=!reverseSort">is_streaming?</a></th>
+  </tr>
+  </thead>
+  <tbody>
+    <tr originals-row ng-repeat="original in vm.originals|orderBy:vm.orderByField:vm.reverseSort" ng-class="{'faded': !original.is_streaming}"></tr>
+  </tbody>
+</table>
