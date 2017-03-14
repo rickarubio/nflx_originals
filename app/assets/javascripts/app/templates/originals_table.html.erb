@@ -6,9 +6,18 @@
         <span ng-show="vm.orderByField == 'title' && !vm.reverseSort" class="fa fa-caret-up"></span>
         <span ng-show="vm.orderByField == 'title' && vm.reverseSort" class="fa fa-caret-down"></span>
         title</a></th>
-    <th><a href="" ng-click="orderByField='release_year'; reverseSort=!reverseSort"><i ng-show="orderByField == 'release_year'" class="fa fa-caret-down"></i> release_year</a></th>
-    <th>maturity</th>
-    <th><a href="" ng-click="orderByField='is_streaming'; reverseSort=!reverseSort">is_streaming?</a></th>
+    <th><a href="" ng-click="vm.orderByField='release_year'; vm.reverseSort=!vm.reverseSort">
+        <span ng-show="vm.orderByField == 'release_year' && !vm.reverseSort" class="fa fa-caret-up"></span>
+        <span ng-show="vm.orderByField == 'release_year' && vm.reverseSort" class="fa fa-caret-down"></span>
+        release_year</a></th>
+    <th><a href="" ng-click="vm.orderByField='maturity'; vm.reverseSort=!vm.reverseSort">
+        <span ng-show="vm.orderByField == 'maturity' && !vm.reverseSort" class="fa fa-caret-up"></span>
+        <span ng-show="vm.orderByField == 'maturity' && vm.reverseSort" class="fa fa-caret-down"></span>
+        maturity</a></th>
+    <th><a href="" ng-click="vm.orderByField='is_streaming'; vm.reverseSort=!vm.reverseSort">
+        <span ng-show="vm.orderByField == 'is_streaming' && !vm.reverseSort" class="fa fa-caret-up"></span>
+        <span ng-show="vm.orderByField == 'is_streaming' && vm.reverseSort" class="fa fa-caret-down"></span>
+        is_streaming?</a></th>
   </tr>
   </thead>
   <tbody>
