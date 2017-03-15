@@ -4,7 +4,6 @@
   App.directive('navBar', ['originalsService', function(originalsService) {
     return {
       restrict: 'E',
-      scope: {},
       templateUrl: 'app/templates/nav_bar.html',
       link: link
     };

@@ -21,6 +21,6 @@
   </tr>
   </thead>
   <tbody>
-    <tr originals-row ng-repeat="original in vm.originals|orderBy:vm.orderByField:vm.reverseSort" ng-class="{'faded': !original.is_streaming}"></tr>
+    <tr originals-row ng-repeat="original in vm.originals|filter:vm.searchText|orderBy:vm.orderByField:vm.reverseSort" ng-class="{'faded': !original.is_streaming}"></tr>
   </tbody>
 </table>

@@ -12,6 +12,7 @@
         this.originals = originalsDataStore.list;
         this.orderByField = 'title';
         this.reverseSort = false;
+        this.searchText = "";
       }
     ]
   );
