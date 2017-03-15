@@ -41,6 +41,7 @@ gem 'high_voltage', '~> 3.0.0'
 gem 'angular-rails-templates', '~> 1.0.2'
 gem 'font-awesome-rails'
 gem 'redis'
+gem 'angular_rails_csrf'
 
 source 'https://rails-assets.org' do
   gem 'rails-assets-angular'

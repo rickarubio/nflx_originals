@@ -1,9 +1,7 @@
 (function() {
   'use strict';
 
-  App.directive('navBar', navBar);
-
-  function navBar() {
+  App.directive('navBar', ['originalsService', function(originalsService) {
     return {
       restrict: 'E',
       scope: {},
@@ -12,6 +10,9 @@
     };
 
     function link(scope) {
+      scope.randomize = function() {
+        originalsService.randomizeOriginals();
+      }
     }
-  }
+  }]);
 })();
