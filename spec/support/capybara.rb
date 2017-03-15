@@ -1,8 +1,6 @@
 require 'capybara/rails'
 require 'capybara/rspec'
 
-byebug
-
 Capybara.default_wait_time = 3
 Capybara.javascript_driver = :webkit
 Capybara::Angular.default_wait_time = 6

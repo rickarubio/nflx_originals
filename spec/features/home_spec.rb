@@ -2,7 +2,7 @@ require 'rails_helper'
 
 feature 'Home' do
   context 'Visitor visits the root page' do
-    scenario 'sees welcome message' do
+    xscenario 'sees welcome message' do
       visit '/'
 
       expect(page).to have_content 'Hello nflx!'
