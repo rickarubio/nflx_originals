@@ -3,9 +3,13 @@
 
   App.controller('originalsCtrl',
     [
-      'originals',
-      function(originals) {
-        this.originals = originals.data;
+      'initialOriginalsList',
+      'originalsDataStore',
+      'originalsChannelService',
+      function(initialOriginalsList, originalsDataStore, originalsChannelService) {
+        originalsDataStore.set(initialOriginalsList.data);
+
+        this.originals = originalsDataStore.list;
         this.orderByField = 'title';
         this.reverseSort = false;
       }

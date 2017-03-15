@@ -17,6 +17,7 @@
 // Rails-Assets.org
 //= require angular
 //= require foundation
+//= require lodash
 //= require angular-rails-templates
 //= require angular-route
 

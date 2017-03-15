@@ -42,6 +42,7 @@ gem 'angular-rails-templates', '~> 1.0.2'
 gem 'font-awesome-rails'
 gem 'redis'
 gem 'angular_rails_csrf'
+gem 'rails-assets-lodash'
 
 source 'https://rails-assets.org' do
   gem 'rails-assets-angular'

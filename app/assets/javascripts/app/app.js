@@ -10,7 +10,7 @@ App.config(
         templateUrl: 'app/templates/app.html',
         controller: 'originalsCtrl as vm',
         resolve: {
-          originals: ['originalsService', function(originalsService) {
+          initialOriginalsList: ['originalsService', function(originalsService) {
             return originalsService.getOriginals();
           }]
         }
